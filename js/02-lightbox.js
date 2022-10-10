@@ -37,7 +37,7 @@ bodyScriptref.append(scriptTag);
 
 galleryBox.addEventListener("click", (etven) => {
   etven.preventDefault();
-  var lightbox = new SimpleLightbox(".gallery a ", {
+  new SimpleLightbox(".gallery a ", {
     captions: true,
     captionsData: "alt",
     captionDelay: 250,
@@ -47,5 +47,5 @@ galleryBox.addEventListener("click", (etven) => {
     captionClass: "",
   });
 
-  lightbox.show();
+ 
 });
